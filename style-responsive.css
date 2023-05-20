@@ -1,0 +1,165 @@
+/** Navbar icon for tablet + mobile */
+.navbar__icon{
+    display: none;
+}
+/** table: width <= 768px and width < 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* ? NAVBAR */
+    .navbar__list {
+        display: none;
+    }
+    .navbar__icon {
+        display: block;
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    .navbar__icon:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    /* ? ABOUT */
+    .infor-myself{
+        flex-direction: column;
+        justify-content: unset;
+        margin: 30px;
+        padding-top: 10px;
+    }
+    .infor-myself img{
+        height: 280px;
+    }
+    .identification,
+    .description{
+        width: 100%;
+    }
+    .description{
+        text-align: left;
+        margin: 0 10px;
+    }
+
+    /* ? ABILITIES */
+    .service__card{
+        width: 45%;
+        margin: 40px 10px;
+    }
+
+    /* ? ACHIEVEMENT */
+    .achievement{
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+    }
+    .achievement > div {
+        width: 45%;
+    }
+
+    /* ? FAVORITES */
+    .portfo__card{
+        width: 45%;
+    }
+
+    /* ? BLOG */
+    .blog__content{
+        flex-wrap: wrap;
+    }
+    .blog__card{
+        width: 42%;
+        margin-top: 20px;
+    }
+
+    .contact {
+        width: 90%;
+    }
+}
+
+/** Small tablet + mobile: width <= 600px */
+@media only screen and (max-width: 600px) {
+    /* ? NAVBAR */
+    .navbar__list {
+        display: none;
+    }
+    .navbar__icon {
+        display: block;
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    .navbar__icon:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    .title-myself::after{
+        text-align: center;
+    }
+
+     /* ? ABOUT */
+    .infor-myself{
+        flex-direction: column;
+        justify-content: unset;
+        margin: 5px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    .title-myself p {
+        font-size: 1.2rem;
+    }
+    .infor-myself img{
+        height: 150px;
+    }
+    .identification,
+    .description{
+        width: 100%;
+    }
+    .description{
+        text-align: left;
+        margin: 0 10px;
+        margin-left: 5px;
+    }
+        /* ? ABILITIES */
+    .service__card{
+        width: 90%;
+        margin: 20px 0;
+    }
+    /* ? ACHIEVEMENT */
+    .achievement{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 80px;
+    }
+    .achievement > div {
+        width: 45%;
+    }
+    /* ? FAVORITES */
+    .portfo__card{
+        width: 80%;
+    }
+    /* ? COMMENT */
+    .comment {
+        padding: 40px 0;
+    }
+    .comment .container img{
+        height: 120px ;
+        width: 130px ;
+    }
+    .comment .container h2 {
+        margin: 5px;
+    }
+    /* ? BLOG */
+    .blog__content{
+        flex-wrap: wrap;
+    }
+    .blog__card{
+        width: 90%;
+        margin-top: 20px;
+    }
+    /* ? CONTACT */
+    .contact {
+        width: 90%;
+        flex-direction: column;
+    }
+    .message,
+    .get-in-touch {
+        width: 100%;
+    }
+    .copy-right{
+        text-align: center;
+    }
+}
