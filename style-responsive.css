@@ -47,6 +47,9 @@
         margin: 30px;
         padding-top: 10px;
     }
+    .personal-infor{
+        text-align: center;
+    }
     .infor-myself img{
         height: 280px;
     }
@@ -140,6 +143,9 @@
     }
     .title-myself p {
         font-size: 1.7rem;
+    }
+    .personal-infor{
+        text-align: center;
     }
     .infor-myself img{
         height: 150px;
