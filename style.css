@@ -72,7 +72,7 @@
 }
 /* ? Introduction */
 .title-myself{
-    background-image: url("/HTML/images/myself-image.jpg");
+    background-image: url("images/myself-image.jpg");
     position: relative;
     height: 500px;
     background-repeat: no-repeat;
