@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@1,300&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@1,300&family=Oswald&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+    --main-color: #0078ff;
+    --light-main-color: #0077ffd8;
+    --skill-bar-html: 85%;
+    --skill-bar-css: 70%;
+    --skill-bar-js: 0%;
+    --skill-bar-other: 0%;
+}
+
+/* ? ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* ? Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+}   
+.header__logo{
+    padding-left: 20px;
+    font-size: 1.3rem;
+}
+.header__logo a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.navbar__list{
+    list-style: none;
+    display: flex;
+}
+.navbar__elements{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.navbar__elements a{
+    padding: 20px 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+}
+.navbar__elements a::after{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 18px;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.navbar__elements a:hover::after{
+    width: 50%;
+}
+
+/* ? BODY */
+.container {
+    background-color: #ccc;
+}
+/* ? Intro */
+.intro {
+    position: relative;
+    padding-top: 70px;
+    text-align: center;
+} 
+
+.intro::after {
+    content: "";
+    position: absolute;
+    background-color: var(--light-main-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.intro > img {
+    width: 80%;
+}
+
+.intro > .title {
+    position: absolute;
+    top: calc(70px + 50% - 67px);
+    right: calc(50% - 377px);
+    color: var(--white-color);
+    font-size: 7rem;
+    z-index: 1;
+    font-family: 'Limelight', sans-serif;
+}
+
+/* ? BODY */
+.body > .title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.body > .title h1 {
+    font-size: 3rem;
+}
+
+.body > .title p {
+    position: relative;
+}
+
+.body > .title p::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: calc(50% - 50px);
+    height: 5px;
+    width: 100px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+}
+
+.content__container {
+    background-color: var(--white-color);
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+.content > h3 {
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    position: relative;
+    font-family: 'Limelight', sans-serif;
+}
+
+.content > h3::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+    height: 5px;
+    width: 30%;
+    background-color: var(--main-color);
+    border-radius: 100px;
+}
+
+.content > p {
+    font-size: 1.5rem;
+    padding: 10px 40px;
+}
+
+.img {
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.travel-img {
+    height: 500px;
+}
+
+.content:hover h3 {
+    color: var(--main-color);
+}
+
+/* ? Đà Lạt */
+.DaLat__container > .title {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 80px;
+}
+
+.DaLat__container > .title  > h1 {
+    font-size: 3rem;
+}
+
+.DaLat__container > .title  > p {
+    position: relative;
+}
+
+.DaLat__container > .title  > p::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 7px;
+    background-color: var(--main-color);
+    border-radius: 100px;
+    bottom: -15px;
+    right: calc(50% - 50px);
+}
+
+.DaLat__container {
+    margin-bottom: 20px;
+}
+
+.card__container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DaLat__card {
+    background-color: var(--white-color);
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    width: 70%;
+}
+
+.DaLat__card > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.DaLat__card > h3 {
+    font-size: 1.7rem;
+}
+
+.DaLat__card > h3:hover {
+    cursor: pointer;
+    color: var(--light-main-color);
+}
+
+.DaLat__card > p {
+    display: none;
+}
+
+.market-title:hover ~ .market-content {
+    display: block;
+}
+
+.datanla-title:hover ~ .datanla-content {
+    display: block;
+}
+
+.lake-title:hover ~ .lake-content {
+    display: block;
+}
+
+.pagoda-title:hover ~ .pagoda-content {
+    display: block;
+}
