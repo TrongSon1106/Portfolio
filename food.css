@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@1,300&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@1,300&family=Oswald&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+    --main-color: #e59b4f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* ? Header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    color: var(--main-color);
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+}   
+.header__logo{
+    padding-left: 20px;
+    font-size: 1.3rem;
+}
+.header__logo a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.navbar__list{
+    list-style: none;
+    display: flex;
+}
+.navbar__elements{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.navbar__elements a{
+    padding: 20px 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+}
+.navbar__elements a::after{
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 18px;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.navbar__elements a:hover::after{
+    width: 50%;
+}
+
+/* ? Body */
+.body {
+    position: relative;
+}
+
+.to-top-link {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 15px;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+.to-top-link > i {
+    transition: transform 0.25s linear;
+}
+
+.to-top-link:hover i {
+    transform: translateY(-5px);
+}
+
+.home-page {
+    padding-top: 70px;
+    padding-left: 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--white-color);
+    height: 700px;
+}
+
+.home-page > h1 {
+    font-family: 'Signika', sans-serif;
+    font-size: 6rem;
+}
+
+.home-page > p {
+    font-size: 1.7rem;
+}
+
+.home-page > button {
+    margin-top: 20px;
+    background-color: var(--main-color);
+    padding: 20px 40px;
+    color: var(--white-color);
+    border: none;
+}
+
+.home-page > button > i {
+    display: none;
+}
+
+.home-page > button:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home-page > button:hover > i {
+    display: inline;
+}
+
+/* ? Note after introduction */
+.note-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 70px 20px;
+}
+
+.note-title {
+    width: 25%;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.7rem;
+}
+
+.note-description {
+    width: 60%;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ? Features */
+.fitur-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #F7F5F2;
+}
+
+.fitur-img {
+    width: 50%;
+}
+
+.fitur__card-container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fitur__card {
+    width: 45%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.fitur__card > h3 {
+    margin: 10px 0;
+}
+
+.fitur__card > p {
+    font-size: 1.1rem;
+}
+
+.fitur-container > .about {
+    width: 50%;
+    text-align: center;
+}
+
+.fitur-container > .about > h2 {
+    font-family: 'Signika', sans-serif;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.fitur-container > .about > p {
+   padding: 0 30px;
+   font-size: 1.2rem;
+}
+/* ? Gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #F7F5F2;
+    margin: 40px 0;
+}
+
+.gallery-title {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px;
+}
+
+.gallery-title > h4 {
+    font-family: 'Signika', sans-serif;
+    font-size: 2rem;
+}
+
+.gallery-title > p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.gallery-title > a {
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+    color: #868080;
+}
+
+.gallery-title > a:hover {
+    color: var(--main-color);
+}
+
+.gallery-img {
+    width: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.gallery-img > img {
+    width: 33%;
+}
+
+/* ? Footer (CONTACT) */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('https://thumbs.dreamstime.com/b/forest-panorama-rays-sunlight-scenic-fresh-green-deciduous-trees-sun-casting-its-light-foliage-53826213.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+footer::after{
+    content: "";
+    position: absolute;
+    background-color: #e59a4f8f;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white-color);
+    width: 70%;
+    position: relative;
+    z-index: 1;
+    padding: 20px 10px;
+}
+.message{
+    width: 45%;
+}
+.message .title,
+.get-in-touch .title{
+    margin: 30px 0;
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+.message .title::after,
+.get-in-touch .title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 30%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: var(--main-color);
+}
+.message .input{
+    display: flex;
+    flex-direction: column;
+}
+.message .input input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin: 17px 0;
+    padding: 9px;
+}
+.message .input textarea{
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+.message .input input::placeholder,
+.message .input textarea::placeholder{
+    font-size: 15px;
+    font-weight: 100;
+}
+.message .input input:focus,
+.message .input textarea:focus{
+    box-shadow: 0 0 5px 1px var(--light-main-color);
+}
+.message button{
+    border: none;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 15px 20px;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-top: 40px;
+        transition: all 0.25s ease-in-out;
+}
+.message button:hover{
+    cursor: pointer;
+    background-color: #dd862f;
+    box-shadow: 0 0 5px 1px var(--light-main-color);
+}
+.get-in-touch{
+    width: 45%;
+}
+.get-in-touch p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.get-in-touch .infor div{
+    margin: 15px 0;
+}
+.get-in-touch .infor div .fa-solid{
+    color: var(--main-color);
+    margin-right: 10px;
+}
+.media{
+    text-align: center;
+}
+.media__title{
+    font-size: 1.2rem;
+    position: relative;
+}
+.media__title::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: -5px;
+    left: 25%;
+    background-color: var(--main-color);
+}
+.media a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.media a i{
+    font-size: 2.5rem;
+    margin: 10px 10px 0 10px;
+}
+.fa-facebook:hover{
+    color: var(--main-color);
+}
+.fa-instagram:hover{
+    color: #ff0095;
+}
+.fa-twitter:hover{
+    color: #0078ff;
+}
+.fa-pinterest:hover{
+    color: red;
+}
+.copy-right{
+    color: var(--white-color);
+    padding-top: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* ? RESPONSIVE */
+/** table: width >= 768px and width < 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* ? Home page */
+    .home-page {
+        padding-left: 15px;
+    }
+    .home-page > h1 {
+        font-size: 4rem;
+    }
+    /* ? Note */
+    .note-container {
+        flex-direction: column;
+    }
+    .note-title {
+        width: 100%;
+    }
+    .note-description {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* ? Features */
+    .fitur-container {
+        flex-direction: column;
+    }
+
+    .fitur__card-container {
+        justify-content: space-around;
+    }
+
+    .fitur-img,
+    .fitur__card-container,
+    .fitur-container >.about {
+        width: 100%;
+    }
+
+    /* ? Gallery */
+    .gallery-container {
+        flex-direction: column;
+    }
+    .gallery-title {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .gallery-img {
+        flex-direction: column;
+        width: 100%;
+    }
+    .gallery-img > img {
+        width: 100%;
+    }
+}
+
+/** Small tablet + mobile: width <= 600px */
+@media only screen and (max-width: 600px) {
+    /* ? Home page */
+    .home-page {
+        padding-left: 15px;
+    }
+    .home-page > h1 {
+        font-size: 4rem;
+    }
+    /* ? Note */
+    .note-container {
+        flex-direction: column;
+    }
+    .note-title {
+        width: 100%;
+    }
+    .note-description {
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* ? Features */
+    .fitur-container {
+        flex-direction: column;
+    }
+
+    .fitur__card-container {
+        justify-content: space-around;
+    }
+
+    .fitur-img,
+    .fitur__card-container,
+    .fitur-container >.about {
+        width: 100%;
+    }
+
+    /* ? Gallery */
+    .gallery-container {
+        flex-direction: column;
+    }
+    .gallery-title {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .gallery-img {
+        flex-direction: column;
+        width: 100%;
+    }
+    .gallery-img > img {
+        width: 100%;
+    }
+}

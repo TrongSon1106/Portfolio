@@ -2,6 +2,44 @@
 .nav__responsive {
     display: none;
 }
+@media screen and (max-width: 768px) {
+     /* ? NAVBAR */
+     .header {
+        justify-content: unset;
+        padding: 0;
+        flex-direction: column;
+    }
+    .body{
+        padding-top: 20px;
+    }
+    .nav__responsive {
+        display: block;
+        width: 100%;
+    }
+    .nav__responsive > ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav__responsive > ul > li {
+        padding: 10px 0;
+    }
+    .nav__responsive > ul > li > a > i {
+        display: block;
+    }
+    .nav__responsive > ul > li > a {
+        text-decoration: none;
+        color: var(--main-color);
+        text-align: center;
+    }
+    .navbar__list {
+        display: none;
+    }
+    .header__logo {
+        font-size: 1rem;
+    }
+}
 /** table: width >= 768px and width < 1023px */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* ? NAVBAR */
